@@ -1,18 +1,20 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 
-///// Run app
-function App() {
+import ReactDOM from 'react-dom';
 
-  return (
-    <div className="App">
-      <Header/>
-      <Footer/>
-    </div>
-  );
-}
+import './index.css';
 
-export default App;
+import * as serviceWorker from './serviceWorker';
+
+import App from './App';
+
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+serviceWorker.unregister();
