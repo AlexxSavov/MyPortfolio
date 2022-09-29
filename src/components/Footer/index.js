@@ -16,7 +16,7 @@ function Footer() {
 
 
         <p>
-        &copy; Alexandre Savov |  <a href="https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/Resume-Alexandre-Savov.pdf" class="link">download my resume</a>  |  <a href="https://coolors.co/96bbbb-618985-414535-f2e3bc-c19875">color palette</a>  |  MADE w/ <img id="react-icon" src="https://img.icons8.com/clouds/100/000000/react.png" alt="React"/>
+        &copy; Alexandre Savov |  <a href="https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/Alexandre-Savov.pdf" class="link">download my resume</a>  |  <a href="https://coolors.co/96bbbb-618985-414535-f2e3bc-c19875">color palette</a>  |  MADE w/ <img id="react-icon" src="https://img.icons8.com/clouds/100/000000/react.png" alt="React"/>
         </p>
 
     </div>

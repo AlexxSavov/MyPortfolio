@@ -18,7 +18,7 @@ return(
                 </p>
 
                 <p>
-                CHECKOUT MY RESUME &rarr;  <a href= "ADD MY RESUME LINK HERE"
+                CHECKOUT MY RESUME &rarr;  <a href= "https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/Resume-Alexandre-Savov.pdf"
                  class="link">RESUME</a>
 
                  <br></br>
