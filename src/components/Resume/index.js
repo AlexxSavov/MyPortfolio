@@ -3,7 +3,8 @@ import React from 'react';
 function Resume() {
   return(
     <section className="mb-5">
-      <h1 className="resume">Resume: Alex Savov</h1>
+      <h1 className="resume">Alex Savov</h1>
+      <h1 className="resume">Resume</h1>
       <hr></hr>
       <div className="row justify-content-center" id="resume">
         <div className="mt-5 pl-5 pr-5">

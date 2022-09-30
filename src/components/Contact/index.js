@@ -55,7 +55,8 @@ function ContactForm() {
 
   return (
     <section className="justify-content-center" id="contact-section">
-      <h1 data-testid='h1tag' className="contact">contact: Alexandre Savov</h1>
+      <h1 data-testid='h1tag' className="contact">Alex Savov</h1>
+      <h1 className="contact">Contact</h1>
       <hr></hr>
       <form className="justify-content-center contact-form" onSubmit={handleSubmit}>
         <div>
