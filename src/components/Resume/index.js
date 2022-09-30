@@ -20,7 +20,7 @@ function Resume() {
             <a
               href="assets/Resume-Alexandre-Savov.pdf"
               className="link"
-              target="_blank"
+              download
             >
               RESUME
             </a>

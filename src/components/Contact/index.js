@@ -4,83 +4,105 @@ import { validateEmail } from '../../utils/helper';
 function ContactForm() {
 
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [messageError, setMessageError] = useState('');
+
+ const { name, email, message } = formState;
+
+ const isButtonDisabled = nameError || emailError || messageError;
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value })
   }
 
-  const validateLength = (e) => {
+
+  const validateName = (e) => {
     if (!e.target.value.length) {
-      setErrorMessage(`${e.target.name} is required.`);
+      setNameError(`${e.target.name} is required`);
     } else {
-      setErrorMessage('');
+      setNameError('');
+    } 
+  }
+
+  const validateMessage = (e) => {
+    if (!e.target.value.length) {
+      setMessageError(`${e.target.name} is required`);
+    } else {
+      setMessageError('');
     }
   }
 
   const validateEmailForm = (e) =>{
-    const isValid = validateEmail(e.target.value);
-
-    if (!isValid) {
-      setErrorMessage('You entered an invalid Email, please enter a valid Email');
+    if (e.target.value === '') {
+      setEmailError('Email is required');
     } else {
-      setErrorMessage('');
+      const isValid = validateEmail(e.target.value);
+  
+      if (!isValid) {
+        setEmailError('You entered an invalid Email, please enter a valid Email');
+      } else {
+        setEmailError('');
+      }
     }
   }
 
 
-
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    // clear the inputs of the form
   }
 
   return (
     <section className="justify-content-center" id="contact-section">
       <h1 data-testid='h1tag' className="contact">contact: Alexandre Savov</h1>
       <hr></hr>
-      <form className="justify-content-center" id="contact-form">
+      <form className="justify-content-center contact-form" onSubmit={handleSubmit}>
         <div>
           <label className="contact-form__label" htmlFor="name">Name:</label>
-          <input className="form-control contact-form__input"
+          <input
+            className={`form-control contact-form__input ${nameError && 'error-input'}`}
             type="text"
             name="name"
             value={name}
             onChange={handleChange}
-            onBlur={validateLength}
+            onBlur={validateName}
           />
+          {nameError && <p className='error-text'>{nameError}</p>}
         </div>
         <div >
           <label htmlFor="email"  className='contact-form__label'>Email:</label>
           <input
-            className="form-control contact-form__input"
+            className={`form-control contact-form__input ${emailError && 'error-input'}`}
             type="email"
             name="email"
             value={email}
             onChange={handleChange}
-            onBlur={validateEmailForm} />
+            onBlur={validateEmailForm}
+          />
+          {emailError && <p className='error-text'>{emailError}</p>}
         </div>
         <div>
           <label htmlFor="message" className='contact-form__label'>Message:</label>
           <textarea
-            className="form-control contact-form__input"
+            className={`form-control contact-form__input ${messageError && 'error-input'}`}
             name="message"
             value={message}
             onChange={handleChange}
-            onBlur={validateLength}
+            onBlur={validateMessage}
             rows="7"
           />
+          {messageError && <p className='error-text'>{messageError}</p>}
         </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-
         <div>
-          <button data-testid='button'
+          <button
+            data-testid='button'
             className="btn btn-outline-dark mt-4"
-            type="submit" onSubmit={handleSubmit}>Submit</button>
+            type="submit"
+            disabled={isButtonDisabled}
+          >
+            Submit
+          </button>
         </div>
       </form>
     </section>
