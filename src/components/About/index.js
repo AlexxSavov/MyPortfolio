@@ -11,11 +11,15 @@ function About() {
         <div className="col-10" id="about-section">
           <img
             className="mb-5 about-profile-image" 
-            src="assets/images/Alex-Savov.jpg"
+            src={process.env.PUBLIC_URL+"/assets/images/Alex-Savov.jpg"}
             alt="Alexandre Savov"
-            height="200"
-            width="200"
+            height={200}
+            width={200}
+           
+          
           />
+          
+
           <p>
            ------------------------------------------------------
           </p>
