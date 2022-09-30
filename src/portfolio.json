@@ -2,7 +2,7 @@
     {
     "id": 1,
     "name": "PassoGeno",
-    "image": "https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/images/PassoGen.PNG",
+    "image": "assets/images/PassoGen.PNG",
     "github": "https://github.com/AlexxSavov/PASSOGENO.git",
     "deploy": "https://alexxsavov.github.io/PASSOGENO/",
     "topics": "javascript, html, CSS"
@@ -10,7 +10,7 @@
     {
     "id": 2,
     "name": "The tech blog",
-    "image": "https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/images/The-Tech-Blog.PNG",
+    "image": "assets/images/The-Tech-Blog.PNG",
     "github": "https://github.com/AlexxSavov/The-Tech-Blog-",
     "deploy": "https://the-tech-blog-101.herokuapp.com/login",
     "topics": "model-view-controller, bcrypt, express-js, mysql, sequelize, node-js, nodemon, dotenv, handlebars-js, jest"
@@ -18,7 +18,7 @@
     {
     "id": 3,
     "name": "GitIQ",
-    "image": "https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/images/GitIQ.PNG",
+    "image": "assets/images/GitIQ.PNG",
     "github": "https://github.com/AlexxSavov/GitIQ.git",
     "deploy": "https://alexxsavov.github.io/GitIQ/",
     "topics": "javascript,API, CSS, html"
@@ -26,7 +26,7 @@
     {
     "id": 4,
     "name": "Note Your Average app",
-    "image": "https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/images/Note-Your-Average-App.PNG",
+    "image": "assets/images/Note-Your-Average-App.PNG",
     "github": "https://github.com/AlexxSavov/Note-Your-Average-App-.git",
     "deploy": "https://note-your-average-app.herokuapp.com/",
     "topics": "express.js, crud methods, API, insomnia"
@@ -34,7 +34,7 @@
     {
     "id": 5,
     "name": "Text Editor",
-    "image": "https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/images/Cautious-Meme.PNG",
+    "image": "assets/images/Cautious-Meme.PNG",
     "github": "https://github.com/AlexxSavov/cautious-meme/tree/main",
     "deploy": "https://cautious-meme.herokuapp.com/",
     "topics": "HTML, WebPacks,Client-server-model, Service Workers, IndexDB, API "
@@ -42,7 +42,7 @@
     {
     "id": 6,
     "name": "First Portfolio",
-    "image": "https://github.com/AlexxSavov/MyPortfolio/raw/main/src/assets/images/FirstPortfolio.PNG",
+    "image": "assets/images/FirstPortfolio.PNG",
     "github": "https://github.com/AlexxSavov/Portfolio.git",
     "deploy": "https://alexxsavov.github.io/Portfolio/",
     "topics": "HTML, Javascript, Bootstrap, CSS, jQuery, Moment"
