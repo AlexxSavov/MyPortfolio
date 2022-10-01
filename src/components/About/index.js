@@ -15,11 +15,7 @@ function About() {
             alt="Alexandre Savov"
             height={200}
             width={200}
-           
-          
           />
-          
-
           <p>
            ------------------------------------------------------
           </p>
@@ -31,18 +27,18 @@ function About() {
           Within this Portfolio you will find some of the projects iv worked on throughout my term at the UofT full stack program.
           </p>
           <p>
-         Its been an exciting journey for me to enter into an entirely new industry. Im always looking to learn knew topics and expand my knowlege as a full stack developer.
+            Its been an exciting journey for me to enter into an entirely new industry. Im always looking to learn knew topics and expand my knowlege as a full stack developer.
           </p>
           <p>
-          When im not activley seeking new opprotunities in tech 
-          im usually spending my time in nature with my dogs. 
+            When im not activley seeking new opprotunities in tech 
+            im usually spending my time in nature with my dogs. 
           </p>
           <p>
             -----------------------------
           </p>
           <p>
             Take a Closer Look &nbsp;
-            <Link to='/resume'>
+            <Link to='/resume' className='resume-link'>
               RESUME
             </Link>
           </p>

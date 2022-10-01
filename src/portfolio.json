@@ -18,7 +18,7 @@
     {
     "id": 3,
     "name": "GitIQ",
-    "image": "../assets/images/GitIQ.PNG",
+    "image": "assets/images/GitIQ.PNG",
     "github": "https://github.com/AlexxSavov/GitIQ.git",
     "deploy": "https://alexxsavov.github.io/GitIQ/",
     "topics": "javascript,API, CSS, html"
